@@ -9,9 +9,9 @@ git clone https://github.com/fabiorogeriosj/finances.git
 git checkout -B task/joao
 
 ### subir
-git add --all
-git commit -m "msg"
-git push origin task/joao
+git add --all  
+git commit -m "msg"  
+git push origin task/joao  
 
 ### abrir pr no github
 
