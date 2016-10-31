@@ -1,10 +1,17 @@
 # finances
 Try in class nodejs
 
-## docs
+## Contribuir
 
-- Lista 1
-- Lista 2
+git clone https://github.com/fabiorogeriosj/finances.git
 
-[link](http://link.com)
+### criar branch com o nome
+git checkout -B task/joao
+
+### subir
+git add --all
+git commit -m "msg"
+git push origin task/joao
+
+### abrir pr no github
 
