@@ -21,4 +21,7 @@ git push origin task/joao
 ```
 
 ### Abra um pull request
-Abra um pull request apartir do seu fork para o repositório original, [aqui](https://help.github.com/articles/creating-a-pull-request/) você encontra um pequeno guia para abrir um PR
+Abra um pull request apartir do seu fork para o repositório original, [aqui](https://help.github.com/articles/creating-a-pull-request/) você encontra um pequeno guia para abrir um PR.
+
+### Licença
+[MIT License](https://github.com/guuibayer/finances/blob/master/LICENSE.md)
