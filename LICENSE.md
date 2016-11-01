@@ -1,3 +1,5 @@
+## Licença
+
 MIT License
 
 Copyright (c) 2016 Fábio Rogério SJ
