@@ -1,0 +1,59 @@
+<html DOCTYPE="html" ng-app="finances">
+
+  <head>
+    <title>Finances</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="lib/angular-locale_pt-br.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </head>
+  <body ng-controller="indexCtrl">
+
+    <h1>Finances</h1>
+    <button type="button" name="button">Novo lançamento</button>
+    <div class="form">
+      <label>
+        ID
+        <input type="text" readonly="readonly" ng-model="conta.id"/>
+      </label>
+      <label>
+        Descrição
+        <input type="text" ng-model="conta.descricao"/>
+      </label>
+      <label>
+        Valor
+        <input type="text" ng-model="conta.valor"/>
+      </label>
+      <label>
+        Data
+        <input type="text" ng-model="conta.data"/>
+      </label>
+      <label>
+        Tipo
+        <input max-length="1" type="text" ng-model="conta.tipo"/>
+      </label>
+      <button type="button" name="button" ng-click="salvar()">Salvar</button>
+    </div>
+    <table>
+      <tr>
+        <td>#</td>
+        <td>Data</td>
+        <td>Descrição</td>
+        <td>Valor</td>
+        <td>Tipo</td>
+        <td></td>
+      </tr>
+      <tr ng-repeat="conta in contas">
+        <td>{{conta.id}}</td>
+        <td>{{conta.data}}</td>
+        <td>{{conta.descricao}}</td>
+        <td>{{conta.valor|currency}}</td>
+        <td>{{conta.tipo}}</td>
+        <td>
+          <button ng-click="editar(conta)" type="button" name="button">Editar</button>
+          <button ng-click="excluir(conta.id)" type="button" name="button">Excluir</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

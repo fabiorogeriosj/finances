@@ -1,0 +1,12 @@
+body {
+  background-color: #fff;
+}
+label {
+  display: block;
+  margin: 10px;
+}
+table {
+  width: 100%;
+  border: 1px solid #ddd;
+  margin: 10px;
+}
